@@ -1,0 +1,27 @@
+p {
+  color: black;
+}
+
+.ant-carousel {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  list-style: none;
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum", "tnum";
+  display: block;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+.slider-movie-info {
+  width: 50%;
+  background-color: rgb(175, 168, 167);
+  opacity: 0.5;
+  align-content: center;
+}

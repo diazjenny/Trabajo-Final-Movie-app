@@ -1,0 +1,22 @@
+.lists-container {
+  padding: 50px;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 768px) {
+  .lists-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .lists-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
