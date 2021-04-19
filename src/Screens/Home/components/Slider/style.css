@@ -22,6 +22,7 @@ p {
 .slider-movie-info {
   width: 50%;
   background-color: rgb(175, 168, 167);
-  opacity: 0.5;
+  opacity: 0.6;
   align-content: center;
+  color: black;
 }
