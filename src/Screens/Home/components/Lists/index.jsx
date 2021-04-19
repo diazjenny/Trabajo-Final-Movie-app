@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link  } from 'react-router-dom'
 import { api } from '../../../../api/axios'
 import './style.css'    
 
@@ -30,7 +30,7 @@ const Lists = ({ path, title }) => {
                                     className="movie-img">
                                 </img>
                                 <h6 className="movie-title">{movie. title}</h6>
-                                <NavLink to={`/movie/?id=${movie.id}`} className="movie-detail">></NavLink>
+                                <Link  to={`/movie/?id=${movie.id}`} className="movie-detail">></Link >
                             </div>
                         )
                     })}

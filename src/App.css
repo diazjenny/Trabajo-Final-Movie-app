@@ -13,37 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  -webkit-text-decoration-skip: objects;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  line-height: 64px;
-}
-
-li {
-  float: left;
-}
-
-a li {
-  display: block;
-  padding: 8px;
-}
-
 article,
 aside,
 dialog,
