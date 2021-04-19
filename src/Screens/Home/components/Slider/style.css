@@ -20,9 +20,7 @@ p {
   overflow: hidden;
 }
 .slider-movie-info {
-  width: 50%;
-  background-color: rgb(175, 168, 167);
-  opacity: 0.6;
-  align-content: center;
-  color: black;
+  background-color: #93a7a362;
+  border-radius: 5px;
+  padding: 10px;
 }

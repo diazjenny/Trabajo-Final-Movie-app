@@ -9,4 +9,13 @@ const api = axios.create({
     }
 });
 
-export { api };
+const apiSearch = axios.create({
+    baseURL: 'https://api.themoviedb.org/3/',
+    params: {
+        api_key: '5d9308da17518f6708778aaf67c4951a',
+        language: 'es',
+        page: 1
+    }
+});
+
+export { api, apiSearch };

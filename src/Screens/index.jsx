@@ -12,7 +12,7 @@ const Screens = () => {
         <Router>
             <Switch>
                 <Route path="/movie" component={Movie} />
-                <Route path="/buscar" component={Search} />
+                <Route path="/search" component={Search} />
                 <Route path="/upcoming" component={ Premieres } />
                 <Route path="/popular" component={ Popular } />
                 <Route path="/" component={ Home } />

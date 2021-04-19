@@ -1,0 +1,18 @@
+.search-title {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  border-radius: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+.input:focus {
+  border: 2px solid #1890ff;
+}

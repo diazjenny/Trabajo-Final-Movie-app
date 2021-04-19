@@ -119,24 +119,6 @@ a li {
   /*display: block;*/
 }
 
-.ant-menu-item,
-.ant-menu-submenu-title {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: 0 20px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    padding 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    padding 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
 .ant-menu-horizontal > .ant-menu-item > a {
   display: block;
   color: rgba(255, 255, 255, 0.65);
@@ -144,14 +126,4 @@ a li {
 
 .ant-menu-horizontal li {
   float: left;
-}
-
-.ant-menu-submenu,
-.ant-menu-submenu-inline {
-  -webkit-transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    padding 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
-    padding 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
