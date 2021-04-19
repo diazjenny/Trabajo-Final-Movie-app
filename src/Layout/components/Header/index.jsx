@@ -27,7 +27,7 @@ function Header() {
                             </div>
                         </li>
                         <li class="ant-menu-item" role="menuitem">
-                            <a className="link" href="/new-movies">Ultimos lanzamientos</a>
+                            <a className="link" href="/upcoming">Ultimos lanzamientos</a>
                         </li>
                         <li class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" role="menuitem" style={{display: 'none'}}>
                             <div class="ant-menu-submenu-title" aria-expanded="false" aria-haspopup="true">
