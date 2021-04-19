@@ -8,52 +8,49 @@ import ReactPaginate from 'react-paginate'
 
 
 const Premieres = () => {
-    const [currentPage, setCurrentPage] = useState(1);
     const [lastest, setLastest] = useState([])
+    const history = useHistory() 
+    const [page, setPage] = useState(1)
     const [totalPages, setTotalPages] = useState([])
-    
+    const endpoint = `/upcoming/?page=${page}`;
+
     useEffect(() => {
-        api.get('/upcoming/', {params: {
-            page: currentPage
-            }
-        })
-            .then(response => {
+        api.get(endpoint, {params: {
+            page: page
+        }}).then(response => {
             setLastest(response.data.results)
             setTotalPages(response.data.total_pages)
-            })        
-    }, [])
-    
-    const per_page = 20;
-    const offset = currentPage * per_page;
+        })
+        history.push(endpoint);
 
-    const currentPageData = lastest
-    .slice(offset, offset + per_page);
-    
-    const pageCount = Math.ceil(lastest.length / per_page);
-    
-    function handlePageClick({ selected: selectedPage }) {
-    setCurrentPage(selectedPage);
-}
-
+        }, [page, endpoint, history])
     return(
         <Layout>
-            <h2 className="premiere-title">Ultimos Lanzamientos</h2>
-            <Cards source={lastest} />
-            <ReactPaginate
-                previousLabel={"← Previous"}
-                nextLabel={"Next →"}
-                breakLabel={'...'}
-                breakClassName={'break-me'}
-                pageCount={totalPages}
-                marginPagesDisplayed={2}
-                pageRangeDisplayed={3}
-                onPageChange={handlePageClick}
-                containerClassName={'pagination'}
-                previousLinkClassName={"pagination__link"}
-                nextLinkClassName={"pagination__link"}
-                activeClassName={"pagination__link--active"}
-                disabledClassName={"pagination__link--disabled"}
-            />
+            <h2 className="popular-title">Ultimos Lanzamientos</h2>
+            <Cards source={lastest}/>
+            
+            <div className="pagination-container">
+                {<ReactPaginate
+                    previousLabel="Previous"
+                    nextLabel="Next"
+                    breakLabel={'...'}
+                    breakClassName={'break-me'}
+                    pageCount={totalPages}
+                    marginPagesDisplayed={2}
+                    pageRangeDisplayed={3}
+                    onPageChange={(actualPage) => {
+                        history.push(`${endpoint}${actualPage.selected + 1}`)
+                        setPage(actualPage.selected + 1)
+                    }}
+                    containerClassName={'pagination'}
+                    activeClassName={'active'}
+                    breakLinkClassName="pagination-link"
+                    pageLinkClassName="pagination-link"
+                    activeLinkClassName="pagination-link"
+                    nextLinkClassName="pagination-link"
+                    previousLinkClassName="pagination-link"
+                />}
+            </div>
         </Layout>
     )
 }
