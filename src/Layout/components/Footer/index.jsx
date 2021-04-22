@@ -3,7 +3,7 @@ import './style.css'
 
 function Footer() {
     return (
-        <footer class="footer ant-layout-footer">
+        <footer className="footer">
                 <p> <span>🎥</span>  Movie App  </p>
         </footer>
     )

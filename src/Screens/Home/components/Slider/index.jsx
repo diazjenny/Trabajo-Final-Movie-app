@@ -33,7 +33,7 @@ const Slider = () => {
                                 <h3>{movie.title}</h3>
                                 <p>{movie.overview}</p>
                                 <Link to={`/movie/?id=${movie.id}`}>
-                                    <button className="btn-primary">Ver mas ...</button>
+                                    <button className="btn-primary btn-carousel">Ver mas ...</button>
                                 </Link>
                           </Carousel.Caption>
                     </Carousel.Item>

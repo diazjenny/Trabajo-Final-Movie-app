@@ -26,7 +26,7 @@ const Premieres = () => {
         }, [page, endpoint, history])
     return(
         <Layout>
-            <h2 className="popular-title">Ultimos Lanzamientos</h2>
+            <h2 className="premiere-title">Ultimos Lanzamientos</h2>
             <Cards source={lastest}/>
             
             <div className="pagination-container">

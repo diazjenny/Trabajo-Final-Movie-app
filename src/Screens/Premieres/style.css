@@ -20,3 +20,19 @@
 .pagination-link:hover {
   text-decoration: none;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .premiere-title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .pagination-container {
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  .pagination-link {
+    padding: 2px 5px;
+  }
+}

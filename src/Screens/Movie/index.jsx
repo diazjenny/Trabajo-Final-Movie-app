@@ -23,14 +23,14 @@ const Movie = () => {
 
     return(
         <Layout>
-            <div className="bgd-container">
+            <div className="bgd-container" >
                 <img src={urlBaseImg + widthImgBg + movie.backdrop_path}
                      className="movie-background"
-                     alt={`Wallpaper de ${movie.original_title}`}>
+                     alt={movie.title}>
                 </img>
                 <div className="movie-detail-container">
                     <img src={urlBaseImg + widthImgPt + movie.poster_path}
-                         alt={`Poster de ${movie.original_title}`}
+                         alt={movie.title}
                          className="movie-poster">
                     </img>
                     <div className="movie-description">
@@ -51,11 +51,8 @@ const Movie = () => {
                                     </ul>
                                 </>
                             }
-                            <div className="trailer-btn">
-                               
-                                    <Video />
-                                
-                                
+                            <div>                               
+                                <Video />                                
                             </div>
                         </div>
                     </div>

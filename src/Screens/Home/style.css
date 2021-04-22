@@ -1,6 +1,6 @@
 .lists-container {
   padding: 50px;
-  margin: 40px 0;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

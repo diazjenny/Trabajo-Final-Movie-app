@@ -1,18 +1,9 @@
-.ant-layout-footer {
-  padding: 24px 50px;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 14px;
-  background: #f0f2f5;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  color: #f0f2f5;
-}
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #001529 !important;
-  margin-top: 5%;
   padding: 1% 0 !important;
   color: #f0f2f5;
+  font-size: 14px;
 }

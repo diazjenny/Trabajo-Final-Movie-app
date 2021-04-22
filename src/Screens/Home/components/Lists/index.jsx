@@ -29,7 +29,7 @@ const Lists = ({ path, title }) => {
                                     alt={movie.title}
                                     className="movie-img">
                                 </img>
-                                <h6 className="movie-title">{movie. title}</h6>
+                                <h6 className="movie-title">{movie.title}</h6>
                                 <Link  to={`/movie/?id=${movie.id}`} className="movie-detail">></Link >
                             </div>
                         )

@@ -11,8 +11,48 @@
 .input {
   border-radius: 30px;
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
 }
 .input:focus {
   border: 2px solid #1890ff;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .input {
+    width: 100%;
+    max-width: 300px;
+  }
+  .search-title {
+    font-size: 18px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .input {
+    width: 100%;
+    max-width: 400px;
+  }
+  .search-title {
+    font-size: 19px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .input {
+    width: 100%;
+    max-width: 600px;
+  }
+  .search-title {
+    font-size: 20px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .input {
+    width: 100%;
+    max-width: 700px;
+  }
+  .search-title {
+    font-size: 20px;
+  }
 }
